@@ -29,6 +29,7 @@
 #import "CalendarHeaderResuableView.h"
 #import "NSDate+Help.h"
 #import "Masonry.h"
+#import "MBProgressHUD+Extend.h"
 static NSString * const reuseIdentifier = @"CalendarNumCell";
 static NSString * const headerIdentifier = @"headerIdentifier";
 
@@ -154,7 +155,7 @@ static NSString * const headerIdentifier = @"headerIdentifier";
         int dayInterval =( leaveTimeInterval - currentTimeInterval )/86400;
         if (dayInterval > 60) {
             _leaveArray = nil;
-//            [MBProgressHUD showTipMessage:@"不能大于60天" toView:nil];
+            [MBProgressHUD showTipMessage:@"不能大于60天" toView:nil];
             return;
         }else{
             [_confirmButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
@@ -228,7 +229,7 @@ static NSString * const headerIdentifier = @"headerIdentifier";
             int dayInterval =( leaveTimeInterval - liveInTimeInterval )/86400;
             if (dayInterval >60) {
                 _leaveArray = nil;
-//                [MBProgressHUD showTipMessage:@"入住时间不能超过60天" toView:nil];
+                [MBProgressHUD showTipMessage:@"入住时间不能超过60天" toView:nil];
                 return;
             }else{
                 if (leaveTime < liveInTime || leaveTime == liveInTime){
@@ -261,7 +262,7 @@ static NSString * const headerIdentifier = @"headerIdentifier";
     //lilang 0608-add
     if(self.isPublishHouse){
         if (self.selectDateArr.count == 0) {
-//            [MBProgressHUD showTipMessage:@"至少选择一天" toView:self];
+            [MBProgressHUD showTipMessage:@"至少选择一天" toView:self];
         }else{
 //            [self sendObject:self.selectDateArr];
             [self removeFromSuperview];
@@ -276,9 +277,9 @@ static NSString * const headerIdentifier = @"headerIdentifier";
         [_collectionView reloadData];
         }
     }else if (_liveInArray.count == 0){
-//        [MBProgressHUD showTipMessage:@"请选择入住日期" toView:nil];
+        [MBProgressHUD showTipMessage:@"请选择入住日期" toView:nil];
     }else{
-//        [MBProgressHUD showTipMessage:@"请选择离开日期" toView:nil];
+        [MBProgressHUD showTipMessage:@"请选择离开日期" toView:nil];
     }
 }
 - (void)cancleClick{

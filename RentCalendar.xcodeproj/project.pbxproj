@@ -29,6 +29,11 @@
 		65BEA3081D0D098100E27514 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 65BEA2FC1D0D098100E27514 /* README.md */; };
 		65BEA30D1D0D0CEA00E27514 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65BEA3091D0D0CEA00E27514 /* LaunchScreen.storyboard */; };
 		65BEA30E1D0D0CEA00E27514 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65BEA30B1D0D0CEA00E27514 /* Main.storyboard */; };
+		65BEA3171D0D304300E27514 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 65BEA3101D0D304300E27514 /* LICENSE */; };
+		65BEA3181D0D304300E27514 /* MBProgressHUD+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = 65BEA3121D0D304300E27514 /* MBProgressHUD+Extend.m */; };
+		65BEA3191D0D304300E27514 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 65BEA3131D0D304300E27514 /* MBProgressHUD.bundle */; };
+		65BEA31A1D0D304300E27514 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 65BEA3151D0D304300E27514 /* MBProgressHUD.m */; };
+		65BEA31B1D0D304300E27514 /* README.mdown in Sources */ = {isa = PBXBuildFile; fileRef = 65BEA3161D0D304300E27514 /* README.mdown */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,6 +82,13 @@
 		65BEA2FC1D0D098100E27514 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		65BEA30A1D0D0CEA00E27514 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		65BEA30C1D0D0CEA00E27514 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		65BEA3101D0D304300E27514 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		65BEA3111D0D304300E27514 /* MBProgressHUD+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+Extend.h"; sourceTree = "<group>"; };
+		65BEA3121D0D304300E27514 /* MBProgressHUD+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+Extend.m"; sourceTree = "<group>"; };
+		65BEA3131D0D304300E27514 /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
+		65BEA3141D0D304300E27514 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		65BEA3151D0D304300E27514 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		65BEA3161D0D304300E27514 /* README.mdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.mdown; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +121,7 @@
 		65BEA2BC1D0D067800E27514 /* RentCalendar */ = {
 			isa = PBXGroup;
 			children = (
+				65BEA30F1D0D304300E27514 /* MBProgressHUD */,
 				65BEA2E01D0D098100E27514 /* Masonry */,
 				65BEA2C01D0D067800E27514 /* AppDelegate.h */,
 				65BEA2C11D0D067800E27514 /* AppDelegate.m */,
@@ -181,6 +194,20 @@
 			path = Masonry;
 			sourceTree = "<group>";
 		};
+		65BEA30F1D0D304300E27514 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				65BEA3101D0D304300E27514 /* LICENSE */,
+				65BEA3111D0D304300E27514 /* MBProgressHUD+Extend.h */,
+				65BEA3121D0D304300E27514 /* MBProgressHUD+Extend.m */,
+				65BEA3131D0D304300E27514 /* MBProgressHUD.bundle */,
+				65BEA3141D0D304300E27514 /* MBProgressHUD.h */,
+				65BEA3151D0D304300E27514 /* MBProgressHUD.m */,
+				65BEA3161D0D304300E27514 /* README.mdown */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -242,6 +269,8 @@
 				65BEA2FD1D0D098100E27514 /* LICENSE in Resources */,
 				65BEA2CA1D0D067800E27514 /* Assets.xcassets in Resources */,
 				65BEA30E1D0D0CEA00E27514 /* Main.storyboard in Resources */,
+				65BEA3171D0D304300E27514 /* LICENSE in Resources */,
+				65BEA3191D0D304300E27514 /* MBProgressHUD.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,13 +288,16 @@
 				65BEA3061D0D098100E27514 /* View+MASAdditions.m in Sources */,
 				65BEA2C51D0D067800E27514 /* ViewController.m in Sources */,
 				65BEA3081D0D098100E27514 /* README.md in Sources */,
+				65BEA31A1D0D304300E27514 /* MBProgressHUD.m in Sources */,
 				65BEA2FF1D0D098100E27514 /* MASConstraint.m in Sources */,
+				65BEA31B1D0D304300E27514 /* README.mdown in Sources */,
 				65BEA2DF1D0D07E100E27514 /* NSDate+Help.m in Sources */,
 				65BEA3021D0D098100E27514 /* MASViewAttribute.m in Sources */,
 				65BEA3051D0D098100E27514 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				65BEA2DC1D0D068B00E27514 /* CalendarNumCell.m in Sources */,
 				65BEA2FE1D0D098100E27514 /* MASCompositeConstraint.m in Sources */,
 				65BEA3011D0D098100E27514 /* MASLayoutConstraint.m in Sources */,
+				65BEA3181D0D304300E27514 /* MBProgressHUD+Extend.m in Sources */,
 				65BEA2C21D0D067800E27514 /* AppDelegate.m in Sources */,
 				65BEA2DA1D0D068B00E27514 /* CalendarView.m in Sources */,
 				65BEA3071D0D098100E27514 /* ViewController+MASAdditions.m in Sources */,
@@ -418,6 +450,7 @@
 				65BEA2D31D0D067800E27514 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
